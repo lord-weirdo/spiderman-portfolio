@@ -1,0 +1,136 @@
+.header {
+  display: flex;
+  max-width: var(--cMaxWidth);
+  width: var(--cWidth);
+  justify-content: space-between;
+  padding: 20px 0px;
+  margin-bottom: -100px;
+  box-sizing: border-box;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  z-index: 9999;
+}
+.header ul {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  column-gap: 40px;
+  row-gap: 8px;
+  align-items: end;
+}
+.header ul li {
+  margin-left: 0px;
+  letter-spacing: 1px;
+  color: #ccc;
+  font-weight: 600;
+  cursor: pointer;
+}
+.navbar-title {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+}
+@media only screen and (min-width: 500px) {
+  .header {
+    padding: 20px 0px;
+  }
+  .header ul {
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+  }
+  .header ul li {
+    color: #eaeaea;
+  }
+  .navbar-title {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header {
+    padding: 35px 0px;
+  }
+  .header ul {
+    column-gap: 80px;
+    font-size: 16px;
+  }
+  .navbar-title {
+    font-size: 18px;
+  }
+}
+
+/* ─── Mobile / Tablet: floating centered pill navbar ─────────────────────── */
+@media only screen and (max-width: 1024px) {
+  .header {
+    /* slim top bar — just shows the name */
+    padding: 20px 25px;
+    margin-bottom: 0;
+    align-items: center;
+    left: 0;
+    width: 100%;
+    transform: none;
+  }
+
+  .navbar-title {
+    display: none;
+  }
+
+  .header ul {
+    /* detach from header, float as a bottom-center pill */
+    position: fixed;
+    bottom: 25px;
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+    gap: 0;
+    column-gap: 0;
+    row-gap: 0;
+    margin: 0;
+    padding: 11px 28px;
+    z-index: 99999;
+
+    /* glassmorphism pill */
+    background: rgba(10, 10, 10, 0.82);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(226, 54, 54, 0.35);
+    border-radius: 100px;
+    box-shadow:
+      0 8px 32px rgba(0, 0, 0, 0.6),
+      0 0 0 0.5px rgba(255, 255, 255, 0.04),
+      inset 0 0 20px rgba(226, 54, 54, 0.04);
+    width: auto;
+    white-space: nowrap;
+  }
+
+  .header ul li {
+    color: #aaa;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 100px;
+    transition: color 0.25s, background 0.25s;
+  }
+
+  .header ul li:hover {
+    color: #fff;
+    background: rgba(226, 54, 54, 0.15);
+  }
+
+  /* hide HoverLinks slide animation on mobile — just show plain text */
+  .header ul .hover-link {
+    overflow: visible;
+  }
+  .header ul .hover-in div {
+    display: none;
+  }
+}
+
