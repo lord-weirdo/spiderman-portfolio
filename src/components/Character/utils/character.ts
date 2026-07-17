@@ -17,7 +17,7 @@ const setCharacter = (
       try {
         let character: THREE.Object3D;
         loader.load(
-          "/models/spiderman_advanced_suit.glb",
+          "/models/spiderman_compressed.glb",
           async (gltf) => {
             character = gltf.scene;
             await renderer.compileAsync(character, camera, scene);
