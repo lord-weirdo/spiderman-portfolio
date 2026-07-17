@@ -70,15 +70,15 @@ const Projects = () => {
   }, []);
 
   const projects = [
-    { name: "CipherLens: CBOM Analyzer Tool", category: "Cybersecurity", tools: "Python, FastAPI, React.js, Podman, SQLite", image: "/images/cipherlens.webp" },
-    { name: "PookiePass: Visitor Management System", category: "SaaS", tools: "React.js, Node.js, Express.js, MariaDB", image: "/images/pookiepass.webp" },
-    { name: "WhatsApp Automation Bot", category: "Marketing Automation", tools: "Python, Flask, Meta Graph API, SQLite, Multi-threading, PyQt Signals", image: "/images/whatsappbot.webp" },
-    { name: "Session Based Access Control Utility", category: "Automation", tools: "Python, Flask, SQLite, Multi-threading", image: "/images/session.webp" },
-    { name: "CCTV Face Recognition System", category: "Computer Vision", tools: "Python, OpenCV, PyTorch, FAISS", image: "/images/cctv.webp" },
-    { name: "Mayabhedi: Unified Cybersecurity", category: "Cybersecurity", tools: "AI/ML, Cryptography, Steganography", image: "/images/mayabhedi.webp" },
-    { name: "ScanSage: Document Utility App", category: "Android App", tools: "Java, Android SDK", image: "/images/scansage.webp" },
-    { name: "PookieTrak: Tracking & Alert System", category: "Desktop App", tools: "Python, PyQt6, Multi-threading", image: "/images/pookietrak.webp" },
-    { name: "BlockBeats: Blockchain Music Player", category: "Web3", tools: "Solana, React.js", image: "/images/blockbeats.webp" }
+    { name: "CipherLens: CBOM Analyzer Tool", category: "Cybersecurity", tools: "Python, FastAPI, React.js, Podman, SQLite", image: "/images/cipherlens.png" },
+    { name: "PookiePass: Visitor Management System", category: "SaaS", tools: "React.js, Node.js, Express.js, MariaDB", image: "/images/pookiepass.png" },
+    { name: "WhatsApp Automation Bot", category: "Marketing Automation", tools: "Python, Flask, Meta Graph API, SQLite, Multi-threading, PyQt Signals", image: "/images/whatsappbot.png" },
+    { name: "Session Based Access Control Utility", category: "Automation", tools: "Python, Flask, SQLite, Multi-threading", image: "/images/session.png" },
+    { name: "CCTV Face Recognition System", category: "Computer Vision", tools: "Python, OpenCV, PyTorch, FAISS", image: "/images/cctv.png" },
+    { name: "Mayabhedi: Unified Cybersecurity", category: "Cybersecurity", tools: "AI/ML, Cryptography, Steganography", image: "/images/mayabhedi.png" },
+    { name: "ScanSage: Document Utility App", category: "Android App", tools: "Java, Android SDK", image: "/images/scansage.png" },
+    { name: "PookieTrak: Tracking & Alert System", category: "Desktop App", tools: "Python, PyQt6, Multi-threading", image: "/images/pookietrak.png" },
+    { name: "BlockBeats: Blockchain Music Player", category: "Web3", tools: "Solana, React.js", image: "/images/blockbeats.png" }
   ];
 
   return (
