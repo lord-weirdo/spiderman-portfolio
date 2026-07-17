@@ -17,10 +17,10 @@ const setCharacter = (
       try {
         let character: THREE.Object3D;
         loader.load(
-          "/models/spiderman_compressed.glb",
+          "/models/spiderman_final.glb",
           async (gltf) => {
             character = gltf.scene;
-            await renderer.compileAsync(character, camera, scene);
+            // await renderer.compileAsync(character, camera, scene);
             character.traverse((child: any) => {
               if (child.isMesh) {
                 const mesh = child as THREE.Mesh;

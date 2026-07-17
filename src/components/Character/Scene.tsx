@@ -83,7 +83,7 @@ const Scene = () => {
         setTimeout(() => {
           light.turnOnLights();
           animations.startIntro();
-        }, 2500);
+        }, 500);
       });
 
       window.addEventListener("resize", () =>
