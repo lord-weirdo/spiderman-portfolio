@@ -57,7 +57,7 @@ const Scene = () => {
 
     const light = setLighting(scene);
     const progress = setProgress((value) => setLoading(value));
-    const { loadCharacter } = setCharacter(renderer, scene, camera);
+    const { loadCharacter } = setCharacter();
 
     loadCharacter().then((gltf) => {
       if (!gltf) return;
