@@ -71,6 +71,12 @@ const Projects = () => {
 
   const projects = [
     { name: "CipherLens: CBOM Analyzer Tool", category: "Cybersecurity", tools: "Python, FastAPI, React.js, Podman, SQLite", image: "/images/cipherlens.png" },
+    {
+      name: "Netra-AI: AI-Powered Retinal Cardiovascular Risk Prediction System",
+      category: "AI / ML · Clinical Software",
+      tools: "Python, PyTorch, EfficientNetV2-S, FastAPI, React 19, TypeScript, TailwindCSS, PostgreSQL, SQLite, CUDA, OpenCV, SHAP, Grad-CAM++, ReportLab, Gemini 2.5 Flash",
+      image: "/images/netra.png",
+    },
     { name: "PookiePass: Visitor Management System", category: "SaaS", tools: "React.js, Node.js, Express.js, MariaDB", image: "/images/pookiepass.png" },
     { name: "WhatsApp Automation Bot", category: "Marketing Automation", tools: "Python, Flask, Meta Graph API, SQLite, Multi-threading, PyQt Signals", image: "/images/whatsappbot.png" },
     { name: "Session Based Access Control Utility", category: "Automation", tools: "Python, Flask, SQLite, Multi-threading", image: "/images/session.png" },
@@ -102,7 +108,7 @@ const Projects = () => {
                 <h4>Tools and features</h4>
                 <p>{project.tools}</p>
               </div>
-              <ProjectImage image={project.image} alt={project.name} />
+              {project.image && <ProjectImage image={project.image} alt={project.name} />}
             </div>
           ))}
         </div>
