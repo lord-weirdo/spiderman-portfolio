@@ -9,8 +9,8 @@ import SocialIcons from "./SocialIcons";
 import Education from "./Education";
 import Projects from "./Projects";
 import setSplitText from "./utils/splitText";
-
 import Internships from "./Internships";
+import PersonalProjects from "./PersonalProjects";
 const MainContainer = ({ children }: PropsWithChildren) => {
   const [isDesktopView, setIsDesktopView] = useState<boolean>(
     window.innerWidth > 1024
@@ -42,6 +42,7 @@ const MainContainer = ({ children }: PropsWithChildren) => {
             <Education />
             <Experience />
             <Internships />
+            <PersonalProjects />
             <Projects />
             <Contact />
           </div>

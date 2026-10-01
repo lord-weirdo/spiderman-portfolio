@@ -6,7 +6,10 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          I am a passionate tech enthusiast with a deep interest in computer science and technology. Along with my technical knowledge, I possess strong communication and leadership skills. I enjoy helping others learn and grow. I'm always eager to learn new things and take on challenges in the tech world.
+          I enjoy exploring how technology works beneath the surface. I like understanding problems, experimenting with ideas, and turning them into practical solutions.
+        </p>
+        <p className="para">
+          My curiosity drives continuous learning, while sharing what I learn strengthens my communication and problem-solving skills.
         </p>
       </div>
     </div>
